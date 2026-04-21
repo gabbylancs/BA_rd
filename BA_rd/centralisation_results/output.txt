@@ -1,0 +1,361 @@
+[ INFO:0@0.225] global registry_parallel.impl.hpp:96 cv::parallel::ParallelBackendRegistry::ParallelBackendRegistry core(parallel): Enabled backends(3, sorted by priority): ONETBB(1000); TBB(990); OPENMP(980)
+[ INFO:0@0.225] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_core_parallel_onetbb4120_64d.dll => FAILED
+[ INFO:0@0.226] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_onetbb4120_64d.dll => FAILED
+[ INFO:0@0.226] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_core_parallel_tbb4120_64d.dll => FAILED
+[ INFO:0@0.226] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_tbb4120_64d.dll => FAILED
+[ INFO:0@0.227] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_core_parallel_openmp4120_64d.dll => FAILED
+[ INFO:0@0.227] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_openmp4120_64d.dll => FAILED
+[ INFO:0@0.537] global ocl.cpp:1185 cv::ocl::haveOpenCL Initialize OpenCL runtime...
+[ INFO:0@0.740] global ocl.cpp:1191 cv::ocl::haveOpenCL OpenCL: found 1 platforms
+[ INFO:0@0.740] global ocl.cpp:983 cv::ocl::OpenCLExecutionContext::Impl::getInitializedExecutionContext OpenCL: initializing thread execution context
+[ INFO:0@0.740] global ocl.cpp:993 cv::ocl::OpenCLExecutionContext::Impl::getInitializedExecutionContext OpenCL: creating new execution context...
+[ INFO:0@0.741] global ocl.cpp:1011 cv::ocl::OpenCLExecutionContext::Impl::getInitializedExecutionContext OpenCL: device=Intel(R) Iris(R) Xe Graphics
+[ INFO:0@0.742] global ocl.cpp:5372 cv::ocl::Context::Impl::__init_buffer_pools OpenCL: Initializing buffer pool for context@0 with max capacity: poolSize=134217728 poolSizeHostPtr=134217728
+Total Matches: 170, RANSAC Inliers: 170
+Total Matches: 133, RANSAC Inliers: 133
+Total Matches: 153, RANSAC Inliers: 153
+Total Matches: 120, RANSAC Inliers: 120
+
+Processing ds1//3734.jpg | Encoder Distance: 7.33138 mm
+Match: 3734
+ | Z: 7.331 mm
+ | Shared X Offset: -9.027 mm
+ | Shared Pitch: 4.340 deg
+ | Shared Yaw: 10.806 deg
+ | Final Roll: 2.524 deg
+[ INFO:0@23.019] global registry.impl.hpp:118 cv::highgui_backend::UIBackendRegistry::UIBackendRegistry UI: Enabled backends(4, sorted by priority): GTK(1000); GTK3(990); GTK2(980); WIN32(970) + BUILTIN(WIN32UI)
+[ INFO:0@23.020] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_highgui_gtk4120_64.dll => FAILED
+[ INFO:0@23.021] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk4120_64.dll => FAILED
+[ INFO:0@23.021] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_highgui_gtk34120_64.dll => FAILED
+[ INFO:0@23.022] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk34120_64.dll => FAILED
+[ INFO:0@23.022] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Users\blewitt\opencv\build\x64\vc16\bin\opencv_highgui_gtk24120_64.dll => FAILED
+[ INFO:0@23.023] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk24120_64.dll => FAILED
+[ INFO:0@23.023] global backend.cpp:90 cv::highgui_backend::createUIBackend UI: using backend: WIN32 (priority=970)
+[ INFO:0@23.023] global window_w32.cpp:3002 cv::impl::Win32BackendUI::createWindow OpenCV/UI: Creating Win32UI window: Pipe Mesh Projection (1)
+Saved: centralisation_results/3734_30.jpg
+Total Matches: 137, RANSAC Inliers: 137
+
+Processing ds1//4329.jpg | Encoder Distance: 7.331 mm
+Match: 4329
+ | Z: 7.331 mm
+ | Shared X Offset: -4.723 mm
+ | Shared Pitch: 5.148 deg
+ | Shared Yaw: 7.349 deg
+ | Final Roll: 4.947 deg
+Saved: centralisation_results/4329_68.jpg
+Total Matches: 85, RANSAC Inliers: 85
+
+Processing ds1//4903.jpg | Encoder Distance: 5.132 mm
+Match: 4903
+ | Z: 5.168 mm
+ | Shared X Offset: -2.018 mm
+ | Shared Pitch: 8.193 deg
+ | Shared Yaw: 6.646 deg
+ | Final Roll: 5.113 deg
+Saved: centralisation_results/4903_27.jpg
+Total Matches: 156, RANSAC Inliers: 156
+
+Processing ds1//5533.jpg | Encoder Distance: 2.933 mm
+Match: 5533
+ | Z: 2.911 mm
+ | Shared X Offset: -6.496 mm
+ | Shared Pitch: 7.126 deg
+ | Shared Yaw: 7.373 deg
+ | Final Roll: 4.414 deg
+Saved: centralisation_results/5533_70.jpg
+Total Matches: 126, RANSAC Inliers: 126
+
+Processing ds1//6113.jpg | Encoder Distance: 6.598 mm
+Match: 6113
+ | Z: 6.597 mm
+ | Shared X Offset: -2.615 mm
+ | Shared Pitch: 3.900 deg
+ | Shared Yaw: 7.020 deg
+ | Final Roll: 7.513 deg
+Saved: centralisation_results/6113_48.jpg
+Total Matches: 145, RANSAC Inliers: 145
+
+Processing ds1//6710.jpg | Encoder Distance: 10.264 mm
+Match: 6710
+ | Z: 10.263 mm
+ | Shared X Offset: -2.799 mm
+ | Shared Pitch: 6.844 deg
+ | Shared Yaw: 5.904 deg
+ | Final Roll: 6.504 deg
+Saved: centralisation_results/6710_52.jpg
+Total Matches: 117, RANSAC Inliers: 117
+
+Processing ds1//7296.jpg | Encoder Distance: 5.865 mm
+Match: 7296
+ | Z: 5.862 mm
+ | Shared X Offset: -4.211 mm
+ | Shared Pitch: 7.771 deg
+ | Shared Yaw: 6.628 deg
+ | Final Roll: 5.281 deg
+Saved: centralisation_results/7296_46.jpg
+Total Matches: 150, RANSAC Inliers: 150
+
+Processing ds1//7887.jpg | Encoder Distance: 7.331 mm
+Match: 7887
+ | Z: 7.331 mm
+ | Shared X Offset: -7.282 mm
+ | Shared Pitch: 5.541 deg
+ | Shared Yaw: 7.637 deg
+ | Final Roll: 5.135 deg
+Saved: centralisation_results/7887_55.jpg
+Total Matches: 246, RANSAC Inliers: 246
+Total Matches: 165, RANSAC Inliers: 165
+
+Processing ds1//9073.jpg | Encoder Distance: 5.865 mm
+Match: 9073
+ | Z: 5.865 mm
+ | Shared X Offset: -1.244 mm
+ | Shared Pitch: 4.402 deg
+ | Shared Yaw: 6.135 deg
+ | Final Roll: 5.035 deg
+Saved: centralisation_results/9073_63.jpg
+Total Matches: 206, RANSAC Inliers: 206
+
+Processing ds1//9650.jpg | Encoder Distance: 6.598 mm
+Match: 9650
+ | Z: 5.871 mm
+ | Shared X Offset: -0.313 mm
+ | Shared Pitch: 7.407 deg
+ | Shared Yaw: 6.281 deg
+ | Final Roll: 7.505 deg
+Saved: centralisation_results/9650_103.jpg
+Total Matches: 70, RANSAC Inliers: 70
+
+Processing ds1//10259.jpg | Encoder Distance: 7.331 mm
+Match: 10259
+ | Z: 7.331 mm
+ | Shared X Offset: -1.528 mm
+ | Shared Pitch: 6.123 deg
+ | Shared Yaw: 6.182 deg
+ | Final Roll: 4.816 deg
+Saved: centralisation_results/10259_22.jpg
+Total Matches: 91, RANSAC Inliers: 91
+
+Processing ds1//10923.jpg | Encoder Distance: 2.199 mm
+Match: 10923
+ | Z: 2.641 mm
+ | Shared X Offset: -4.293 mm
+ | Shared Pitch: 4.245 deg
+ | Shared Yaw: 6.132 deg
+ | Final Roll: 5.005 deg
+Saved: centralisation_results/10923_36.jpg
+Total Matches: 90, RANSAC Inliers: 90
+
+Processing ds1//11515.jpg | Encoder Distance: 8.065 mm
+Match: 11515
+ | Z: 8.063 mm
+ | Shared X Offset: -8.834 mm
+ | Shared Pitch: 4.699 deg
+ | Shared Yaw: 7.783 deg
+ | Final Roll: 5.116 deg
+Saved: centralisation_results/11515_33.jpg
+Total Matches: 265, RANSAC Inliers: 265
+Total Matches: 184, RANSAC Inliers: 184
+Total Matches: 105, RANSAC Inliers: 105
+
+Processing ds1//13285.jpg | Encoder Distance: 10.997 mm
+Match: 13285
+ | Z: 10.997 mm
+ | Shared X Offset: -3.111 mm
+ | Shared Pitch: -2.809 deg
+ | Shared Yaw: 6.838 deg
+ | Final Roll: 4.999 deg
+Saved: centralisation_results/13285_39.jpg
+Total Matches: 99, RANSAC Inliers: 99
+
+Processing ds1//13868.jpg | Encoder Distance: 9.531 mm
+Match: 13868
+ | Z: 9.530 mm
+ | Shared X Offset: -8.585 mm
+ | Shared Pitch: 7.655 deg
+ | Shared Yaw: 7.483 deg
+ | Final Roll: 5.208 deg
+Saved: centralisation_results/13868_34.jpg
+Total Matches: 208, RANSAC Inliers: 208
+
+Processing ds1//14475.jpg | Encoder Distance: 3.666 mm
+Match: 14475
+ | Z: 3.664 mm
+ | Shared X Offset: -4.273 mm
+ | Shared Pitch: 6.563 deg
+ | Shared Yaw: 6.451 deg
+ | Final Roll: 5.140 deg
+Saved: centralisation_results/14475_99.jpg
+Total Matches: 261, RANSAC Inliers: 261
+Total Matches: 122, RANSAC Inliers: 122
+
+Processing ds1//15674.jpg | Encoder Distance: 2.199 mm
+Match: 15674
+ | Z: 1.843 mm
+ | Shared X Offset: -5.180 mm
+ | Shared Pitch: 4.555 deg
+ | Shared Yaw: 6.430 deg
+ | Final Roll: 4.981 deg
+Saved: centralisation_results/15674_40.jpg
+Total Matches: 94, RANSAC Inliers: 94
+
+Processing ds1//16249.jpg | Encoder Distance: 10.997 mm
+Match: 16249
+ | Z: 11.090 mm
+ | Shared X Offset: -14.399 mm
+ | Shared Pitch: 7.313 deg
+ | Shared Yaw: 6.080 deg
+ | Final Roll: 6.105 deg
+Saved: centralisation_results/16249_24.jpg
+Total Matches: 232, RANSAC Inliers: 232
+Total Matches: 217, RANSAC Inliers: 217
+Total Matches: 138, RANSAC Inliers: 138
+
+Processing ds1//18041.jpg | Encoder Distance: 2.199 mm
+Match: 18041
+ | Z: 2.204 mm
+ | Shared X Offset: -9.058 mm
+ | Shared Pitch: 5.609 deg
+ | Shared Yaw: 6.231 deg
+ | Final Roll: 2.790 deg
+Saved: centralisation_results/18041_51.jpg
+Total Matches: 66, RANSAC Inliers: 66
+
+Processing ds1//18589.jpg | Encoder Distance: 8.798 mm
+Match: 18589
+ | Z: 8.813 mm
+ | Shared X Offset: -9.083 mm
+ | Shared Pitch: 6.215 deg
+ | Shared Yaw: 5.588 deg
+ | Final Roll: 1.648 deg
+Saved: centralisation_results/18589_16.jpg
+Total Matches: 75, RANSAC Inliers: 75
+
+Processing ds1//19184.jpg | Encoder Distance: 8.065 mm
+Match: 19184
+ | Z: 8.064 mm
+ | Shared X Offset: -8.510 mm
+ | Shared Pitch: 0.193 deg
+ | Shared Yaw: 3.223 deg
+ | Final Roll: 3.923 deg
+Saved: centralisation_results/19184_27.jpg
+Total Matches: 95, RANSAC Inliers: 95
+Total Matches: 145, RANSAC Inliers: 145
+Total Matches: 84, RANSAC Inliers: 84
+Total Matches: 80, RANSAC Inliers: 80
+Total Matches: 63, RANSAC Inliers: 63
+Total Matches: 49, RANSAC Inliers: 49
+Total Matches: 89, RANSAC Inliers: 89
+Warning: No distance found for image 23302
+Total Matches: 121, RANSAC Inliers: 121
+Total Matches: 70, RANSAC Inliers: 70
+Total Matches: 87, RANSAC Inliers: 87
+
+Processing ds1//25048.jpg | Encoder Distance: 14.663 mm
+Match: 25048
+ | Z: 14.785 mm
+ | Shared X Offset: -0.500 mm
+ | Shared Pitch: 7.091 deg
+ | Shared Yaw: 7.081 deg
+ | Final Roll: 7.226 deg
+Saved: centralisation_results/25048_25.jpg
+Total Matches: 52, RANSAC Inliers: 52
+
+Processing ds1//25636.jpg | Encoder Distance: 8.798 mm
+Match: 25636
+ | Z: 8.797 mm
+ | Shared X Offset: -1.185 mm
+ | Shared Pitch: 4.503 deg
+ | Shared Yaw: 5.572 deg
+ | Final Roll: 4.625 deg
+Saved: centralisation_results/25636_13.jpg
+Total Matches: 61, RANSAC Inliers: 61
+
+Processing ds1//26261.jpg | Encoder Distance: 8.798 mm
+Match: 26261
+ | Z: 8.798 mm
+ | Shared X Offset: -4.212 mm
+ | Shared Pitch: 7.006 deg
+ | Shared Yaw: 6.316 deg
+ | Final Roll: 5.014 deg
+Saved: centralisation_results/26261_23.jpg
+Total Matches: 81, RANSAC Inliers: 81
+
+Processing ds1//26841.jpg | Encoder Distance: 4.399 mm
+Match: 26841
+ | Z: 4.214 mm
+ | Shared X Offset: -3.393 mm
+ | Shared Pitch: 3.894 deg
+ | Shared Yaw: 6.308 deg
+ | Final Roll: 4.765 deg
+Saved: centralisation_results/26841_18.jpg
+Total Matches: 64, RANSAC Inliers: 64
+
+Processing ds1//27437.jpg | Encoder Distance: 6.598 mm
+Match: 27437
+ | Z: 6.605 mm
+ | Shared X Offset: -6.358 mm
+ | Shared Pitch: 5.954 deg
+ | Shared Yaw: 6.255 deg
+ | Final Roll: 6.233 deg
+Saved: centralisation_results/27437_12.jpg
+Total Matches: 64, RANSAC Inliers: 64
+
+Processing ds1//28026.jpg | Encoder Distance: 4.399 mm
+Match: 28026
+ | Z: 4.396 mm
+ | Shared X Offset: -1.835 mm
+ | Shared Pitch: 10.776 deg
+ | Shared Yaw: 6.054 deg
+ | Final Roll: 5.085 deg
+Saved: centralisation_results/28026_22.jpg
+Total Matches: 210, RANSAC Inliers: 210
+
+Processing ds1//28642.jpg | Encoder Distance: 2.199 mm
+Match: 28642
+ | Z: 2.193 mm
+ | Shared X Offset: -4.940 mm
+ | Shared Pitch: 6.721 deg
+ | Shared Yaw: 6.404 deg
+ | Final Roll: 5.491 deg
+Saved: centralisation_results/28642_121.jpg
+Total Matches: 164, RANSAC Inliers: 164
+Total Matches: 224, RANSAC Inliers: 224
+Total Matches: 45, RANSAC Inliers: 45
+Total Matches: 84, RANSAC Inliers: 84
+Total Matches: 98, RANSAC Inliers: 98
+Total Matches: 198, RANSAC Inliers: 198
+Total Matches: 141, RANSAC Inliers: 141
+Total Matches: 106, RANSAC Inliers: 106
+
+Processing ds1//33465.jpg | Encoder Distance: 9.531 mm
+Match: 33465
+ | Z: 9.531 mm
+ | Shared X Offset: -1.072 mm
+ | Shared Pitch: 3.314 deg
+ | Shared Yaw: 6.031 deg
+ | Final Roll: 4.904 deg
+Saved: centralisation_results/33465_31.jpg
+Total Matches: 87, RANSAC Inliers: 87
+Total Matches: 96, RANSAC Inliers: 96
+
+Processing ds1//34641.jpg | Encoder Distance: 8.798 mm
+Match: 34641
+ | Z: 8.795 mm
+ | Shared X Offset: -5.951 mm
+ | Shared Pitch: 7.062 deg
+ | Shared Yaw: 6.054 deg
+ | Final Roll: 5.958 deg
+Saved: centralisation_results/34641_33.jpg
+Total Matches: 132, RANSAC Inliers: 132
+
+Processing ds1//35241.jpg | Encoder Distance: 4.399 mm
+Match: 35241
+ | Z: 4.389 mm
+ | Shared X Offset: -4.558 mm
+ | Shared Pitch: 7.316 deg
+ | Shared Yaw: 5.989 deg
+ | Final Roll: 6.446 deg
+Saved: centralisation_results/35241_50.jpg
+Total Matches: 295, RANSAC Inliers: 295
+Total Matches: 207, RANSAC Inliers: 207
