@@ -33,6 +33,7 @@ struct BAFunctor {
         // Only wrap angles if they are massive; fmod can sometimes jitter gradients
         double s_p = params[2];
         double s_y = params[3];
+        double opt_y_off = params[6];
 
         const double delta = 1.5;
         const double delta2 = delta * delta;
@@ -45,11 +46,11 @@ struct BAFunctor {
             Eigen::AngleAxisd yA(s_y, Eigen::Vector3d::UnitX());
             Eigen::Matrix3d R = (rA * pA * yA).toRotationMatrix();
 
-            Eigen::Vector3d T(s_tx, known_y_off, (f == 0) ? 0.0 : tz2);
+            Eigen::Vector3d T(s_tx, opt_y_off, (f == 0) ? 0.0 : tz2);
 
             for (int i = 0; i < (int)observations.size(); ++i) {
-                double th = params[6 + i * 2];
-                double zw = params[7 + i * 2];
+                double th = params[7 + i * 2];
+                double zw = params[8 + i * 2];
                 Eigen::Vector3d P_w(r * std::cos(th), r * std::sin(th), zw);
 
                 Eigen::Vector3d P_c = R.transpose() * (P_w - T);
@@ -88,12 +89,16 @@ struct BAFunctor {
         fvec[base_idx + 5] = std::sqrt(alpha) * std::pow(params[5] / r_limit_rad, 3); // roll2
 
 
+        // 7. NEW SOFT CONSTRAINT: Pulls opt_y_off back towards known_y_off
+        // If the robot sags, it can move, but it pays a "penalty" to stay near known_y_off
+        fvec[base_idx + 6] = std::sqrt(20*alpha) * std::pow(opt_y_off / known_y_off, 3); // roll2
+
         return 0;
     }
 
     int inputs() const { return 6 + ((int)observations.size() * 2); }
     // FIX: Must return + 4 to match the base_idx + 3 assignment
-    int values() const { return ((int)observations.size() * 4) + 6; }
+    int values() const { return ((int)observations.size() * 4) + 7; }
 };
 
 class PipeBundleAdjuster {
@@ -107,6 +112,7 @@ public:
     Eigen::Vector3d getOptimizedTranslation() const { return optimized_t; }
     Eigen::Vector3d getOptimizedRPY() const { return optimized_rpy; }
     double getOptimizedXOffset() const { return optimized_t.x(); }
+    double getOptimizedYOffset() const { return optimized_t.y(); }
 
 private:
     double fx, fy, cx, cy;

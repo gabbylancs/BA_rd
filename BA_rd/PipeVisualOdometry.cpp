@@ -95,7 +95,7 @@ bool PipeVisualOdometry::processFrames(cv::Mat& img1, cv::Mat& img2) {
                         return m.queryIdx == matches[i].queryIdx && m.trainIdx == matches[i].trainIdx;
                     });
 
-                if (!isTopFeature) continue; // Skip if it's an inlier but not in our "Top 100"
+                //if (!isTopFeature) continue; // Skip if it's an inlier but not in our "Top 100"
 
                 cv::Point2f p = pts1[i];
                 cv::Point2f p2 = pts2[i];

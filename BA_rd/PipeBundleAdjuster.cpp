@@ -8,9 +8,10 @@ PipeBundleAdjuster::PipeBundleAdjuster(double _fx, double _fy, double _cx, doubl
 
 void PipeBundleAdjuster::solve(const std::vector<CylindricalFeature>& features,
     double initial_dz, double r1, double r2, double p, double y,
-    double y_off, double enc_dist, double alpha) {
+    double y_off, double enc_dist, double alpha) 
+{
     int n_pts = (int)features.size();
-    Eigen::VectorXd x(6 + n_pts * 2);
+    Eigen::VectorXd x(7 + n_pts * 2);
     x.setZero();
 
     // Seed shared camera parameters
@@ -20,10 +21,12 @@ void PipeBundleAdjuster::solve(const std::vector<CylindricalFeature>& features,
     x[3] = y;          // shared_yaw
     x[4] = r1;         // roll1
     x[5] = r2;         // roll2
+    x[6] = y_off;      // Y Offset
 
-    for (int i = 0; i < n_pts; ++i) {
-        x[6 + i * 2] = features[i].theta;
-        x[7 + i * 2] = features[i].z;
+    for (int i = 0; i < n_pts; ++i) 
+    {
+        x[7 + i * 2] = features[i].theta;
+        x[8 + i * 2] = features[i].z;
     }
 
     BAFunctor functor(features, fx, fy, cx, cy, 67.42/2, y_off, enc_dist, alpha, p, y);
@@ -36,7 +39,10 @@ void PipeBundleAdjuster::solve(const std::vector<CylindricalFeature>& features,
     lm.parameters.xtol = 1e-14;      // Tighten parameter tolerance
     lm.minimize(x);
 
-    // Optimized results (returning frame 2's pose)
-    optimized_t = Eigen::Vector3d(x[0], y_off, x[1]);
-    optimized_rpy = Eigen::Vector3d(x[5], x[2], x[3]); // [roll2, shared_p, shared_y]
+    // 4. Store Optimized Results
+    // T = [tx, ty, tz] -> x[0] is tx, x[6] is now the optimized y_off, x[1] is tz
+    optimized_t = Eigen::Vector3d(x[0], x[6], x[1]);
+
+    // RPY = [roll2, pitch, yaw]
+    optimized_rpy = Eigen::Vector3d(x[5], x[2], x[3]);
 }

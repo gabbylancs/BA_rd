@@ -135,10 +135,14 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PipeBundleAdjuster.cpp" />
+    <ClCompile Include="PipeMeshGenerator.cpp" />
+    <ClCompile Include="PipeUnwrapper.cpp" />
     <ClCompile Include="PipeVisualOdometry.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PipeBundleAdjuster.h" />
+    <ClInclude Include="PipeMeshGenerator.h" />
+    <ClInclude Include="PipeUnwrapper.h" />
     <ClInclude Include="PipeVisualOdometry.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

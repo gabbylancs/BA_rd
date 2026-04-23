@@ -24,12 +24,24 @@
     <ClCompile Include="PipeVisualOdometry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="PipeUnwrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PipeMeshGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PipeBundleAdjuster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PipeVisualOdometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeUnwrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PipeMeshGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
