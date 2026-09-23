@@ -39,7 +39,6 @@ void PipeBundleAdjuster::solve(const std::vector<CylindricalFeature>& features,
     lm.parameters.xtol = 1e-14;      // Tighten parameter tolerance
     lm.minimize(x);
 
-    // 4. Store Optimized Results
     // T = [tx, ty, tz] -> x[0] is tx, x[6] is now the optimized y_off, x[1] is tz
     optimized_t = Eigen::Vector3d(x[0], x[6], x[1]);
 

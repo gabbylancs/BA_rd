@@ -19,19 +19,14 @@ struct CylindricalFeature
 class PipeVisualOdometry
 {
 public:
-    // Constructor: Sets up the camera and pipe environment
     PipeVisualOdometry(double r, double _fx, double _fy, double _cx, double _cy);
 
-    // Processes two images to find movement and features
     bool processFrames(cv::Mat& img1, cv::Mat& img2);
 
-    // Exports the results to a text file for PhD analysis/Seeding
     void saveResults(const std::string& filename);
 
-    // Visualizes the matches and the calculated epipole
     void display(cv::Mat img1, cv::Mat img2);
 
-    // Allows other classes to access the detected features
     std::vector<CylindricalFeature> getInitialFeatures() const
     {
         return initialFeatures;
